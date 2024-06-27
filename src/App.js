@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       <div
-        className={`flex-row flex-wrap mx-auto overflow-hidden max-screen text-center mt-4  py-5  px-5 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}
+        className={`flex-row flex-wrap mx-auto overflow-hidden box-border  text-center mt-4  py-5  px-5 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit md:h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}
       >
         <Header setquery={setquery} formatBackground={formatBackground} />
         <Input setquery={setquery} setunits={setunits} units={units} />

@@ -27,7 +27,7 @@ function Header({ setquery, formatBackground }) {
   let [open, setOpen] = useState(false);
   
   return (
-    <div className="shadow-md mx-1 my-6">
+    <div className="shadow-md mx-1 my-6 ">
       <div className="md:flex items-center  ">
         <div className="flex items-center w-full  my-6">
           <div
@@ -44,8 +44,8 @@ function Header({ setquery, formatBackground }) {
           </h1>
         </div>
         <div
-          className={`flex md:flex-nowrap flex-wrap ${formatBackground()} rounded items-center  md:my-0 my-7 md:pb-0 pb-12 absolute  md:static  md:z-auto z-[1] top-20 w-full md:w-auto md:pl-1 pl-8 transition-all duration-500 ease-in shadow-md md:shadow-none ${
-            open ? "top-20 opacity-100" : "right-[-990px]"
+          className={`flex md:flex-nowrap box-border flex-wrap md:${formatBackground()} rounded items-center  md:my-0 my-7 md:pb-0 pb-12 absolute  md:static  md:z-auto z-[1] top-20  md:w-auto md:pl-1 pl-1 transition-all duration-500 ease-in shadow-md md:shadow-none ${
+            open ? "top-20 opacity-100 " : "left-[-990px]"
           }  md:opacity-100 `}
         >
           {cities.map((city) => {
@@ -53,7 +53,7 @@ function Header({ setquery, formatBackground }) {
               <button
                 key={city.id}
                 onClick={() => setquery({ q: city.title })}
-                className={` text-lg md:text-white text-orange-500 hover:text-gray-400 duration-500 text-md mx-4 } `}
+                className={` text-lg md:text-white text-orange-500 hover:text-gray-400 duration-500 text-md mx-4 p-2 } `}
               >
                 {city.title}
               </button>
