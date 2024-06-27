@@ -44,8 +44,8 @@ function Header({ setquery, formatBackground }) {
           </h1>
         </div>
         <div
-          className={`flex md:flex-nowrap flex-wrap md::${formatBackground()} rounded items-center  md:my-0 my-7 md:pb-0 pb-12 absolute  md:static  md:z-auto z-[1] top-20 w-full md:w-auto md:pl-1 pl-8 transition-all duration-500 ease-in shadow-md md:shadow-none ${
-            open ? "top-20 opacity-100" : "top-[990px]"
+          className={`flex md:flex-nowrap flex-wrap ${formatBackground()} rounded items-center  md:my-0 my-7 md:pb-0 pb-12 absolute  md:static  md:z-auto z-[1] top-20 w-full md:w-auto md:pl-1 pl-8 transition-all duration-500 ease-in shadow-md md:shadow-none ${
+            open ? "top-20 opacity-100" : "right-[-990px]"
           }  md:opacity-100 `}
         >
           {cities.map((city) => {
