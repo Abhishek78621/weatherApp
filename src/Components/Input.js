@@ -26,7 +26,7 @@ function Input({ setquery, units, setunits }) {
     if (units !== selectedUnits) setunits(selectedUnits);
   };
   return (
-    <div className=" flex flex-wrap my-6">
+    <div className=" flex flex-wrap my-6 px-2">
       <div className="flex flex-row items-center md:w-1/2 justify-center space-x-2">
         <input
           type="text"
