@@ -1,9 +1,9 @@
 import { DateTime } from "luxon";
 
-// const API_KEY = "37f7975f421775330b973079d92f4599";
+ const API_KEY = "37f7975f421775330b973079d92f4599";
 // const API_KEY = "510cd0b2236762ab68abee5054069515";
 
-const API_KEY = "1fa9ff4126d95b8db54f3897a208e91c";
+//const API_KEY = "1fa9ff4126d95b8db54f3897a208e91c";
 const BASE_URL = "https://api.openweathermap.org/data/2.5";
 
 // https://api.openweathermap.org/data/2.5/weather?q=shimla&appid=1fa9ff4126d95b8db54f3897a208e91c
